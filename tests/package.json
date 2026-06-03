@@ -1,0 +1,12 @@
+{
+  "name": "blue-green-tests",
+  "version": "1.0.0",
+  "description": "Tests for Blue-Green deployment validation",
+  "type": "module",
+  "scripts": {
+    "test": "node test-deployment.js",
+    "test:health": "node test-deployment.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
