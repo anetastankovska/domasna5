@@ -51,7 +51,7 @@ jobs:
         with:
           context: ./server
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/backend
+          tags: ghcr.io/${{ github.repository_owner }}/domasna5-backend
 
   deploy-backend:
     needs: build-and-push
