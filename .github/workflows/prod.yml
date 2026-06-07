@@ -60,11 +60,11 @@ jobs:
     steps:
       - name: Deploy to Render Production
         run: |
-          if [ -n "${{ secrets.RENDER_DEPLOY_HOOK_PROD }}" ]; then
-            curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_PROD }}"
+          if [ -n "${{ secrets.RENDER_DEPLOY_HOOK }}" ]; then
+            curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
             echo "Deployment to Render Prod triggered."
           else
-            echo "RENDER_DEPLOY_HOOK_PROD secret not configured. Skipping deployment."
+            echo "RENDER_DEPLOY_HOOK secret not configured. Skipping deployment."
           fi
 
   deploy-frontend:
