@@ -20,16 +20,6 @@
     "grade": 4
   },
   {
-    "id": "cd32df6f-c181-4584-a2e4-0f7176e2f444",
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "age": 30,
-    "gender": "F",
-    "country": "GB",
-    "email": "jane.doe@gmail.com",
-    "grade": 3
-  },
-  {
     "id": "ea0ad8f1-868a-4aee-a090-f92f9112e956",
     "firstName": "Buster",
     "lastName": "Scruggs",
