@@ -53,6 +53,14 @@ jobs:
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/domasna5-backend
 
+      - name: Build and Push Client Image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./client
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/domasna5-frontend
+
+
   deploy-backend:
     needs: build-and-push
     runs-on: ubuntu-latest
